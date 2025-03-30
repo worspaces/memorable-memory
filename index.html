@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosee Modified</title>
+    <style>
+        body {
+            background-color: #010101;
+            margin: 0;
+            min-height: 100vh; /* Ensure at least full viewport height */
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center; /* Center horizontally */
+            justify-content: flex-start; /* Align content to the top of the page */
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+
+        header {
+            width: 100%; /* Full width */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px; /* Space between header and next image */
+        }
+
+        header img {
+            max-width: 100%; /* Ensure the image fits within the available width */
+            max-height: 300px; /* Increased max height for a larger image */
+            object-fit: contain; /* Ensure the entire image is visible without distortion */
+        }
+
+        .main-image {
+            max-width: 95%; /* Slightly larger, ensuring the image fits within the available width */
+            height: 50%; /* Maintain the aspect ratio */
+            border: 10px solid white; /* White border around the image */
+            margin-top: -50px; /* Space between the header and the main image */
+        }
+
+        .text-below {
+            color: white; /* White text color */
+            font-size: 50px; /* Large font size */
+            font-weight: bold; /* Bold text */
+            margin-top: 60px; /* Increased space between the main image and text */
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4); /* Glowing effect */
+        }
+
+        .ad, .ad2 {
+            width: 200px; /* Adjust the width as needed */
+            height: 100%; /* Full height of the page */
+            background-color: #26855D;
+            position: fixed;
+            top: 0;
+            display: flex;
+            flex-direction: column; /* Stack the text vertically */
+            justify-content: center;
+            align-items: center;
+            color: black; /* Black text */
+            font-size: 20px; /* Bigger text */
+            font-weight: bold; /* Bold text */
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+            white-space: normal; /* Allow text wrapping */
+            word-wrap: break-word; /* Ensure long words wrap properly */
+            border: 15px solid #414241; /* Very thick border with color #414241 */
+        }
+
+        .ad {
+            right: 0; /* Position it on the right side */
+        }
+
+        .ad2 {
+            left: 0; /* Position it on the left side */
+        }
+
+        a {
+            color: black;
+            text-decoration: underline;
+        }
+
+        .test-box {
+            background-color: #222; /* Dark background for the box */
+            color: white; /* White text */
+            padding: 20px;
+            border-radius: 15px; /* Smooth corners */
+            position: relative; /* Adjust relative to the page */
+            top: 120px; /* Space from the top of the page */
+            font-size: 18px; /* Medium text for better readability */
+            font-weight: bold; /* Bold text */
+            width: 250px; /* Set a width for the box */
+            line-height: 1.5; /* Increase line height for better spacing */
+            max-height: 300px; /* Prevent overflow */
+            overflow-y: auto; /* Allow vertical scrolling if text exceeds the box height */
+            white-space: normal; /* Allow text wrapping */
+        }
+
+        .container {
+            display: flex; /* Use flexbox to align the boxes side by side */
+            justify-content: center; /* Center the boxes */
+            width: 100%; /* Take full width of the page */
+            max-width: 1000px; /* Limit the width for better responsiveness */
+            margin-top: 60px; /* Space between the glowing text and the boxes */
+            align-items: center; /* Vertically align content */
+        }
+
+        .test-box + .test-box {
+            margin-left: 20px; /* Space between the two boxes */
+        }
+
+        .info-credits {
+            color: white; /* White text color */
+            font-size: 30px; /* Medium font size */
+            font-weight: bold; /* Bold text */
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4); /* Glowing effect */
+            margin-top: 20px; /* Space above the text */
+            text-align: center; /* Center the text */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://nosee.hs.vc/nosee.png" alt="Header Image" draggable="false">
+    </header>
+
+    <img class="main-image" src="https://nosee.hs.vc/nosee-modified.png" alt="The thumbnail of the project before it was banned!" draggable="false">
+
+    <!-- Text below the image with glow effect -->
+    <div class="text-below">
+        The protector of projects!
+    </div>
+
+    <!-- Container for both test boxes and the glowing text in between -->
+    <div class="container">
+        <!-- First Test Box -->
+        <div class="test-box">
+            This is a modified version of "Nosee", with bug fixes, patches, and a more user-friendly interface.
+            <br><br>
+            <strong>Download here:</strong>
+            <br>
+            <a href="https://mega.nz/file/MJ53wAqZ#W-MenThLLydGa40sA6P5QePcSG12rUPjn1V5cvisFe4" target="_blank" style="color: #00f;">Download Link</a>
+            <br><br>
+            <strong>If you want to help this project grow, repost it with this file:</strong>
+            <br>
+            <a href="https://mega.nz/file/pBZgnBTK#-F0ue10AJnOfy8kTON0s2uTZsaiOvEVeCQCGbRRd0D0" target="_blank" style="color: #00f;">Repost Link</a>
+            <br><br>
+            <strong>Warning:</strong><br>
+            With addons, this can be bypassed.<br>
+            This uses the old detector and has hidden bugs that I cannot fix.<br><br>
+            Thank you for reading!
+        </div>
+
+        <!-- White Glowing Text: ←Info/Credits→ -->
+        <div class="info-credits">
+            ←Info/Credits→
+        </div>
+
+        <!-- Second Test Box -->
+        <div class="test-box">
+            @AnticheatTester<br>
+            @ST_7R<br>
+            Me
+        </div>
+    </div>
+
+    <div class="ad">
+        
+    </div>
+    
+    <div class="ad2">
+        
+    </div>
+
+</body>
+</html>
